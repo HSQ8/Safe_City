@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/baselayout"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No volume readings!"
+        android:id="@+id/volumeText"
+        android:textSize="0dp" />
+
+    <TextView
+        android:id="@+id/gpsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="No gps readings!"
+        android:textSize="0dp"
+        />
+
+    <TextView
+        android:id="@+id/httpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO requests sent!"
+        android:textSize="0dp"
+/>
+
+    <com.gigamole.library.PulseView
+        android:id="@+id/pulseview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:pv_icon="@drawable/round_security_white_48"
+
+        app:pv_interpolator="@android:anim/linear_interpolator"
+        app:pv_spawn_period="1000"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_weight="10"
+        />
+    <TextView
+        android:id="@+id/under"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Listening for Threats"
+        android:textSize="25dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        />
+
+
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
